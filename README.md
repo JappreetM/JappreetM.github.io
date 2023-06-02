@@ -10,13 +10,12 @@ This is a personal portfolio website that showcases my skills, projects, and exp
 - Contact section that allows users to send me a message directly from the website
 
 
-## Installation
-1. Clone the repository to your local machine
-2. Open the index.html file in your web browser
+## Access
+1. Visit the link jappreetm.github.io
 
 
 ## License
 This project is licensed under the MIT License.
 
 ## Contact Information
-For more information about me or this project, please contact me @jappreet.mangat@gmail.com or visit my website.
+For more information about me or this project, please email me @jappreet.mangat@gmail.com or visit my website at jappreetm.github.io.
