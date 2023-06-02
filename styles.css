@@ -1,0 +1,251 @@
+* {
+    margin: 0;    
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {   
+    background-image: linear-gradient(135deg, #1B3349, #010b13);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-color: #152c42; */
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    }
+
+
+.logo {
+    border-radius: 10px;
+    height: 100px;
+    /* border: 5px #1B3349 solid; */
+    box-shadow: 5px 5px 3px #0a1620 ;
+}
+
+header {
+    padding: 10px 10% 10px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav ul li {
+display: inline-block;
+list-style: none;
+margin: 10px 20px; 
+ 
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #0a1620 ;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #ea4f16;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+} 
+
+nav ul li a:hover {
+    text-shadow: 2px 2px 3px #ea4f16;
+    /* text-shadow: 1px 1px 2px #c6c180; */
+    /* text-decoration: underline;
+    text-decoration-color: #c6c180; */
+}
+
+#main {
+    padding: 10px 10%;
+}
+.intro {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* display: inline-block; */
+    text-align: center;
+    margin-top: 15%;
+    font-size: 20px;
+    /* margin-bottom: 20%; */
+    
+}
+
+#name {
+    margin: 30px auto;
+    /* position: relative; */
+
+}
+#name h1 span {
+/* color: #c6c180; */
+color: #ea4f16;
+}
+
+#name h1 {
+    /* margin: auto; */
+    font-size: 70px;
+    font-style: italic;
+    position: relative;
+    }
+    
+
+#name h3 {
+ margin-top: 35px;
+ margin-bottom: 30px;
+ font-size: 30px;
+ position: relative;
+ animation: color-change 2.5s infinite;
+}
+  
+@keyframes color-change {
+    0% { color: #fff; }
+    50% { color: #ea4f16; }
+   
+   
+}
+
+/* #name h3:hover{
+    color: #ea4f16;
+    transition: .7s;
+} */
+
+#name h1::before {
+    content: '';
+    width: 50%;
+    height: 5px;
+    /* background: #c6c180; */
+    background: #ea4f16;
+    position: absolute;
+    left: 25%;
+    top:-30px;
+}
+
+#name h3::after {
+    content: '';
+    width: 50%;
+    height: 5px;
+    /* background: #c6c180; */
+    background: #ea4f16;
+    position: absolute;
+    left: 25%;
+    bottom: -30px;
+}
+    
+#headline {
+    padding-top: 30px;
+    margin: auto;
+
+}
+.intro p {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    /* justify-content: space-between; */
+}
+
+#coder {
+            flex-basis: 20%;
+            width: 50%;
+            justify-content: left;
+}
+.next-section h1{
+    margin-top: 5%;
+font-weight: 700;
+font-size: 40px;
+color: #ea4f16;
+}
+
+.next-section p, .tab-content p{
+text-align: justify;
+font-size: 15px;
+ }
+
+.about-tabs {
+    flex-basis: 50%;
+    margin-top: 5%;
+    
+    /* display: flex;
+    flex-wrap: wrap;
+     */
+    
+     
+}
+.tab-heading {
+    margin-top: 5%;
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    justify-content: space-between;
+    /* margin-right: 10%; */
+    cursor: pointer;
+}
+
+.tab-link {
+    position: relative;
+}
+.tab-link::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #ea4f16;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: .5s;
+}
+
+.tab-link.active-link::after{
+    width: 100%;
+}
+.tab-link:hover::after{
+    width: 50%;
+}
+.tab-link.active-link:hover::after{
+    width: 100%;
+}
+
+/* .tab-link.active-link:hover::after{
+    width: 100%;
+} */
+
+.tab-content ul{
+    list-style: none;
+    line-height: 35px;
+}
+.tab-content ul li {
+    font-size: 18px;
+    /* font-weight: 400; */
+        }
+
+    .tab-content {
+        display: none;        
+    }
+
+    .tab-content.active-content {
+        display: block;
+        margin-top: 5%;
+    }
